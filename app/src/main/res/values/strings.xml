@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Wolf</string>
+    <string name="turn_edit_text">Enter the url or search</string>
+</resources>

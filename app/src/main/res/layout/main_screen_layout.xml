@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".core.WorkCore">
+
+    <RelativeLayout
+        android:id="@+id/backImgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg" />
+
+        <View
+            android:id="@+id/backTouBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb000000" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lightTouch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:src="@mipmap/night_ico" />
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/wolf_night"
+        android:translationY="-100dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImg"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        android:translationY="-100dp">
+
+        <TextView
+            android:id="@+id/turnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/turn_edit_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/normalFontSize"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <View
+            android:id="@+id/bottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_below="@+id/turnEdit"
+            android:background="#999999" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLinOur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottomLin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#66333333"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/backTouch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/backImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/back_night_ico" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goTouch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/goImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/go_night_ico" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuTouch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/menuImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/menu_night_ico" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/windowsTouch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/windowsImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/window_night_ico" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/homeTouch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/homeImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/home_night_ico" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLinOur"
+        android:orientation="vertical">
+
+        <com.deep.dpwork.weight.StatusBarPaddingView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.prohua.roundlayout.RoundAngleFrameLayout
+            android:id="@+id/roundAngleFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:radius="5dp">
+
+            <RelativeLayout
+                android:id="@+id/TopLin"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="#66333333"
+                android:visibility="gone">
+
+                <com.deep.wolf.weight.ScanLoadingView
+                    android:id="@+id/scanLoadingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/TopLinText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Thing"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/smallFontSize" />
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/refreshImg"
+                    android:layout_width="24dp"
+                    android:padding="2dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/refresh_night_ico"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+        </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/animView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

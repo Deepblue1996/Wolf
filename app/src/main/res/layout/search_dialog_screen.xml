@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/backBgTouch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.deep.dpwork.weight.StatusBarPaddingView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.prohua.roundlayout.RoundAngleFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:radius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mBackGround"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/searchEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:hint="@string/turn_edit_text"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/darkText"
+                    android:textSize="@dimen/smallSFontSize" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/search_ico" />
+            </RelativeLayout>
+        </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <com.prohua.roundlayout.RoundAngleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:radius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/googleLin"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/google_ico" />
+
+                        <TextView
+                            android:id="@+id/googleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Google"
+                            android:textColor="@color/mBackGround"
+                            android:textSize="@dimen/smallFontSize" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mBackGround" />
+                </RelativeLayout>
+            </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+            <com.prohua.roundlayout.RoundAngleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:radius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/baiduLin"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/baidu_ico" />
+
+                        <TextView
+                            android:id="@+id/baiduText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Baidu"
+                            android:textColor="@color/darkText"
+                            android:textSize="@dimen/smallFontSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mBackGround" />
+                </RelativeLayout>
+            </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+            <com.prohua.roundlayout.RoundAngleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:radius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sogouLin"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/sougou_ico" />
+
+                        <TextView
+                            android:id="@+id/sogouText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Sogou"
+                            android:textColor="@color/darkText"
+                            android:textSize="@dimen/smallFontSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mBackGround" />
+                </RelativeLayout>
+            </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+            <com.prohua.roundlayout.RoundAngleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:radius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/biyingLin"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/biying_ico" />
+
+                        <TextView
+                            android:id="@+id/biyingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Bing"
+                            android:textColor="@color/darkText"
+                            android:textSize="@dimen/smallFontSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mBackGround" />
+                </RelativeLayout>
+            </com.prohua.roundlayout.RoundAngleFrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Search history"
+                android:textColor="@color/mBackGround"
+                android:textSize="@dimen/smallFontSize" />
+
+            <TextView
+                android:id="@+id/clearTouch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"
+                android:text="Clear"
+                android:textColor="@color/mBackGround"
+                android:textSize="@dimen/smallFontSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="History is empty"
+            android:textColor="@color/backGround"
+            android:textSize="@dimen/smallSFontSize" />
+
+        <com.prohua.roundlayout.RoundAngleFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:radius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </com.prohua.roundlayout.RoundAngleFrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
