@@ -348,7 +348,7 @@ public class MainScreen extends TBaseScreen {
     public Bitmap getFullWebViewSnapshot(WebView webView) {
         //重新调用WebView的measure方法测量实际View的大小（将测量模式设置为UNSPECIFIED模式也就是需要多大就可以获得多大的空间）
         //webView.measure(View.MeasureSpec.makeMeasureSpec(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED),
-                //View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+        //View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
         //调用layout方法设置布局（使用新测量的大小）
         //webView.layout(0, 0, webView.getMeasuredWidth(), webView.getMeasuredHeight());
         //开启WebView的缓存(当开启这个开关后下次调用getDrawingCache()方法的时候会把view绘制到一个bitmap上)
